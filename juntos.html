@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos ficar juntos?</title>
+    <link rel="stylesheet" href="juntos.css">
+</head>
+
+
+<body>
+    
+    <div id="conteudo">
+        <h2>Aceita ficar junto cmg pra sempre?</h2>
+        <div style="margin: auto;width: 170px;">
+            <button style="position: fixed;display: block;" class="btn" onclick="sim()">SIM</button>
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute;">NÃO</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    function sim() {
+        alert("Vamos ficar juntinhos para sempre S2! :)");
+     
+        location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
+    }
+
+    function desvia(btn) {
+    
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+</script>
+
+</html>

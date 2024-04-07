@@ -1,0 +1,30 @@
+#conteiner{
+
+display: flex;
+
+}
+
+#coluna1 {
+flex: 1;
+text-align: justify ;
+flex-direction: row;
+}
+body {
+
+background-color: #e792a1;
+display: flex;
+}
+
+p {
+
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+q{
+
+    margin-bottom: -500px;
+}
+
